@@ -1,0 +1,8 @@
+<div class="card w-75" class="col" ng-repeat="item in list.items">
+  <div class="card-body">
+    <h3 class="card-text">({{item.short_name}}) {{item.name}}</h3>
+    <p class="card-text">{{item.description}}</p>
+    <button class="btn btn-primary" type="button" name="button"
+      ng-click="list.onRemove({index: $index})">Don't want this one!</button>
+  </div>
+</div>
